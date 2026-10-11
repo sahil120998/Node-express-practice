@@ -9,7 +9,7 @@ const debug = createDebug('my-express:server');
 /**
  * Get port from environment and store in Express.
  */
-
+console.log('PORT type:', process.env.PORT);
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
